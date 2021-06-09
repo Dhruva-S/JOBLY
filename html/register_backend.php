@@ -42,7 +42,7 @@ include('config.php');
          $headers= "MIME-Version: 1.0\r\n";
          $headers.= "Content-type: text/html\r\n";
         //Header information
-        $headers.= "From: Jobly <dhruwaah@gmail.com>\r\n";
+        $headers.= "From: Jobly <youremailid@gmail.com>\r\n";                      //Your email id from which you want to send the emails  to the subscribers
         //Send email
         if(mail($to, $subject, $message, $headers))
            echo "Email sent successfully.";
