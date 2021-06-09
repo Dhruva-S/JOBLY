@@ -174,7 +174,7 @@ if (mysqli_num_rows($result) > 0) {
          $headers= "MIME-Version: 1.0\r\n";
          $headers.= "Content-type: text/html\r\n";
         //Header information
-        $headers.= "From: Jobly <dhruwaah@gmail.com>\r\n";
+        $headers.= "From: Jobly <youremailid@gmail.com>\r\n";			//specify the email from which yow want to send your emails
         //Send email
         if(mail($to, $subject, $message, $headers))
            echo "Email sent successfully.";
