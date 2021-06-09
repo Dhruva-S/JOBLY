@@ -28,6 +28,21 @@
 <div id="header"></div>
 <body>
 
+<div class="container">
+<div style="text-align:center;">
+	<h1 >ABOUT US</h1>
+<h3>JOBLY is a two-way freelancing platform.
+In today’s fast-changing business environment, it’s extremely important to be able to respond to client needs in the most effective and timely manner.</h3><br>
+
+<h3>On one hand ,the website enables people to list a job that they want to get done along with a complete job description .They can also mention the type of web developer they want based on the requirement.</h3><br>
+
+<h3>And on the other hand, freelancers can view these jobs available and also search for specific jobs which come under their area of expertise.<br>
+
+<h3>The website also provides a profile page in which the user can view the list of jobs he has taken up.
+
+</h3>
+</div>
+</div>
 
 <footer>
 	

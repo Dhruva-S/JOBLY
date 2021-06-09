@@ -124,9 +124,10 @@ else
 }
 
 $total=$total+1;
-
+//INSERT THE JOB DETAILS ONTO THE DATABASE
 $sql="INSERT into project_details VALUES ('$total','$name','$project_name','$description','$job_type','$price_range',-1,'','$trend_rate');";
 $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
+
 		if($result==true)
 			{
 				?>
@@ -137,6 +138,57 @@ $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
 				<?php
 				echo "Successfully posted your project!";
 			}
-		header("location:dashboard.php");
+
+
+//SEND AN EMAIL TO SUBSCRIBERS ABOUT THIS JOB
+// $newJobPid=$total;
+
+//Now loop through the email of all the subscribers and send them an email abou this new job
+$sql = "SELECT email_list FROM subscriptions";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result)) {
+    /***************************************************************************************/
+        /* Sending email notification */
+        //Email address of the receiver
+        $to = $row['email_list'];
+        //Email subject
+        $subject = "Hey look out for the new job at JOBLY !";
+        //Email message
+        $message = "
+        <html>
+        <head> 
+        Here is an interesting job from $name.
+        </head>
+
+        <body>
+        <p><a href='http://localhost/COMPLETED_PROJECTS/Jobly-main/html/selectjob.php?pid=$total'>View the job</a></p>
+        <body>
+        </html>";
+       
+        
+
+        //Header information
+         $headers= "MIME-Version: 1.0\r\n";
+         $headers.= "Content-type: text/html\r\n";
+        //Header information
+        $headers.= "From: Jobly <dhruwaah@gmail.com>\r\n";
+        //Send email
+        if(mail($to, $subject, $message, $headers))
+           echo "Email sent successfully.";
+        else
+           echo "Unable to send the email.";
+       /***************************************************************************************/
+  }
+} 
+else {
+  // echo "0 results";
+}
+
+mysqli_close($conn);
+
+		header("location:profile.php");
 ?>
 

@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
@@ -22,6 +23,7 @@
                     <div>
                          <a href="job_post.html" target="_self">Post</a>
                         <a href="searchjobs.php">Search</a>
+                        <a href="subscribe.php" >Subscribe</a>
                         <a href="aboutus.php">About Us</a>
                         <a href="feedback.php">Feedback</a>
                     </div>
@@ -30,7 +32,7 @@
                     <a class="btn btn-primary"  href="profile.php">Profile</a>
                 </div>
                 
-                <a class="btn btn-secondary mt-2" href="login.php">logout</a> 
+                <a style="background-color:white; color:black;" href="login.php"><b>logout</b></a> 
             </nav>
         </div>
     </header>

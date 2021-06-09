@@ -25,7 +25,11 @@ if(isset($_POST['but_submit'])){
             $_SESSION['emailid']=$emailid;
             header('Location:profile.php');
         }else{
-            header('Location:register.php');
+                        
+echo ("<script LANGUAGE='JavaScript'>
+                window.alert('INVALID CREDENTIALS !!');
+                window.location.href='login.php';
+                </script>");
         }
 
     }

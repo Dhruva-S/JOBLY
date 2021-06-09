@@ -39,11 +39,11 @@
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h3>New Here?</h3>
-                    <p>Have some technical stuff to be done with?? 
-                        or simply Wanna be a part of this awesome website ??
-                        Click of link below to get started with us....
-                    </p>
+                    <h2>New Here?</h2>
+                    <h2>Have some technical stuff to be done with?? 
+                        Or simply want be a part of this website ??
+                        Click on the link below to get started with us....
+                    </h2>
                     <button class="btn transparent" id="sign-up-btn" onclick="window.location.href='register.php'">Sign Up</button>
                 </div>
                 

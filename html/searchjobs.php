@@ -94,7 +94,7 @@ $(function(){
    
 				<table class="table table-striped table-hover responsive">
 				<tr class="text-info">
-				<th >Project Name</th>
+				<th >Name</th>
 				<th >Job Type</th>
 				<th >Price Range</th>
 				<th >View Full Job</th>
@@ -137,10 +137,6 @@ $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
 								</tr>
 								
 								<?php
-								
-								
-								
-
 							}
 
 			}
@@ -204,7 +200,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 $genre=$_POST['genre'];
 
-$sql="SELECT project_id,name,job_type,price_range,trend_rate  FROM project_details where job_type='$genre' ;";
+$sql="SELECT project_id,name,job_type,price_range,trend_rate  FROM project_details where NOT assigned_status='1'and  job_type='$genre' ;";
 $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
 
 

@@ -82,7 +82,7 @@ $rows=mysqli_fetch_assoc($result);
 echo "<h4>".$name."<br></h4>";
 ?>
 
-<h3><strong>Project Name</strong></h3>
+<h3><strong>Name</strong></h3>
 <?php 
 echo "<h4>".$project_name."<br></h4>";
 ?>
@@ -102,31 +102,25 @@ echo "<h4>".$job_type."<br><h4>";
 echo "<h4>".$price_range."<br><h4>";
 ?>
 
-<form action="#" method="post">
-	<button onclick="myFunction()" class="btn btn-success btn-lg" type="submit" name="submit" value="submit">Take up the job</button>
-</form>
-</div>
+	
+	<?php echo "<a style='background-color:MediumSeaGreen ; color:white;padding: 7px;  class='btn btn-primary stretched-link'  ' href=success.php?pid=",$pid,">Take up the job</a>";?>
+
+
 
 </div>
 <div class="col-md-1">
 	</div>
 </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 		function myFunction() {
-		alert("Job successsfully assigned !!!");
-		window.location.href='profile.php';
-	//Assigning the job to the user who takes up the job
-		<?php
+		//alert("Job successsfully assigned !!!");
+		//window.location.href='profile.php';
 
-		$conn=mysqli_connect('localhost','root','') or die(mysqli_error($conn));
-		$select_db=mysqli_select_db($conn,'freelance') or die(mysqli_error($conn));
-		$x=$_SESSION["uname"];
-		//$sql="UPDATE project_details set assigned_status='1',assigned_to='$x' WHERE 'project_id'='$pid' ";
-		$sql="UPDATE `project_details` SET `assigned_status`='1',assigned_to='$x' where `project_id`='$pid' ";
-		mysqli_query($conn,$sql) or die(mysqli_error($conn));
-		?>
+		
 		}
-		</script>
+		</script> -->
 </body>
 </html>
+
+<!-- After taking up the job h=it should display a sucess message and then redirect to the profile page. Right now after selecting it stays in the same page */

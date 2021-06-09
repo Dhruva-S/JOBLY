@@ -21,31 +21,29 @@
                     <h2 class="title">Sign Up</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="" class="userFullName"  placeholder="Enter Username" >
+                        <input type="text" name="username" id="" class="userFullName"  placeholder="Enter Username" required>
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" name="email" id="userEmail"   placeholder="Enter Email" >
+                        <input type="email" name="email" id="userEmail"   placeholder="Enter Email" required>
                     </div>
 
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="password" id="password" placeholder="Enter Password" >
+                        <input type="password" name="password" id="password" placeholder="Enter Password" required >
                     </div>
                     <label><input type="checkbox" onclick="myFunction()" autocomplete="off"  />Show Password</label>
                     <input type="submit" value="Register" class="btn solid" name="save">
-                
+                </form>
             </div>
         </div>
         <div class="panels-container">
             <div class="panel left-panel">
                 <div class="content">
-                    <h3>Welcome!!</h3>
-                    <p>Wanna make a new account or wanna register for a friend??
-                        Welocme to this awesome website...
-                    </p>
-                    <button class="btn transparent" id="sign-up-btn" ><a href="login.php">sign in</a></button>
+                    <h1 >WELCOME!!</h1>
+                    <h1>Welcome to the official JOBLY website</h1>
+                    <button class="btn btn-dark " id="sign-up-btn" ><a href="login.php">sign in</a></button>
                 </div>
             </form>  
                 <img src="../svg/undraw_job_offers_kw5d.svg" alt="logo" class="image" >

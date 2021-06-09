@@ -20,7 +20,9 @@ if (!$success) {
 }
 
 
-echo "Thank You For Contacting Us ";
-header('Location:profile.php');
+echo ("<script LANGUAGE='JavaScript'>
+                window.alert('Thanks for the feedback.We appreciate it.');
+                window.location.href='profile.php';
+                </script>");
 $con->close();
 ?>

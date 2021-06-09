@@ -99,7 +99,7 @@ $(function(){
                              <a href="onlinepay.php"><input type="submit" class="btn btn-danger btn-block" value="CANCEL" required="" /></a>   
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                              <a href="profile.php"><input type="submit" class="btn btn-success btn-block" value="PAY NOW" required="" /></a>  
+                              <a href="profile.php"><input type="submit" class="btn btn-success btn-block" onclick="onpay()" value="PAY NOW" required="" /></a>  
                             </div>
                         </div>
 
@@ -110,5 +110,14 @@ $(function(){
         </div>
     </div>
 </div>
+            
+<script LANGUAGE='JavaScript'>
+                
+                function onpay()
+                {
+                    window.alert('Payment successfully done!');
+                window.location.href='login.php';
+                }
+                </script>
 </body>
 </html>

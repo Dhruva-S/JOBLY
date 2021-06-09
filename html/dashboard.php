@@ -22,6 +22,7 @@
                         
                         <a href="job_post.html" target="_self">Post</a>
                         <a href="searchjobs.php">Search</a>
+                        <a href="subscribe.php" >Subscribe</a>
                         <a href="aboutus.php">About Us</a>
                         <a href="feedback.php">Feedback</a>
                     </div>

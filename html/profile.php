@@ -74,9 +74,7 @@ $(function(){
         <ul class="list-group">
   <li class="list-group-item" style="text-align: center;"><h3><Strong>Name:</Strong><?php echo " ".$userProfileName; ?></h3></li>
   <li class="list-group-item" style="text-align: center;"><h3><Strong>Email-id:</Strong><?php echo " ".$_SESSION['emailid']; ?></h3></li>
-  <li class="list-group-item" style="text-align: center;"><h3><Strong>Password:</Strong><?php echo " ".$_SESSION['password']; ?></h3></li>
-  
-</ul>
+
 
       </p>
       <!--<a href="#" class="btn btn-primary">See Profile</a>-->
@@ -97,7 +95,7 @@ $(function(){
 
         <table class="table table-striped table-hover responsive">
         <tr class="text-info">
-        <th >Project Name</th>
+        <th >Name</th>
         <th >Job Type</th>
         <th >Price Range</th>
         <th >View Full Job</th>
@@ -138,12 +136,7 @@ $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
                 </tr>
                 
                 <?php
-                
-                
-                
-
               }
-
       }
       
                 ?> 
